@@ -1,0 +1,124 @@
+/* Section Styling */
+.wins-section {
+    background: linear-gradient(to bottom, #ECEFF1, #F5F7FA, #F0F2F5);
+    padding: 50px 0px;
+    margin: 0 0 0 0; /* REMOVE top margin */
+    text-align: center;
+}
+
+
+/* Title */
+.wins-title {
+    color: #2c3e50;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.wins-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.win-card {
+    background-color: #ffffff;
+    width: 320px; 
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.win-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.win-image {
+    width: 100%;
+    height: 200px; /* increased from 180px */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Card Header */
+.win-header {
+    font-size: 1.2rem; /* slightly larger */
+    font-weight: 600;
+    color: #1e1e1e;
+    margin: 14px 18px 6px;
+}
+
+/* Card Description */
+.win-description {
+    font-size: 1rem;
+    color: #444;
+    margin: 0 18px 18px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .wins-section {
+        padding: 30px 15px;
+    }
+
+    .wins-title {
+        font-size: 2rem;
+    }
+
+    .win-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+.win-links {
+    margin: 0 18px 18px 18px;
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;
+    margin-top: auto; /* Pushes links to the bottom */
+}
+
+.win-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex: 1; /* Makes buttons equal width */
+    text-align: center;
+}
+
+.github-link {
+    background-color: #24292f;
+    color: #ffffff;
+}
+
+.github-link:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+}
+
+.linkedin-link {
+    background-color: #0077b5;
+    color: #ffffff;
+}
+
+.linkedin-link:hover {
+    background-color: #005b87;
+    transform: translateY(-2px);
+}
+

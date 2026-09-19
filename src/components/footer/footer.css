@@ -1,13 +1,12 @@
 footer{
-    background: url('../../assets/bg_main_dark.jpg');
+    background: #F0F2F5; /* Seamless transition from wins-section gradient */
     text-align: center;
-    padding-bottom: 0.1rem;
+    padding: 2rem 0 1.5rem 0;
     margin-bottom: 0px;
-    font: 0.9rem;
-    margin-top: 0%;
+    font-size: 0.9rem;
+    margin-top: 0;
     font-family: 'Segoe UI', sans-serif;
-    color: white;
-
+    color: #1e1e1e; /* Text in black */
 }
 
 .footer__copyright{

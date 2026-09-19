@@ -9,6 +9,22 @@
     margin: 0;
     text-align: center;
 }
+.about-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+    transition: color 0.3s ease;
+}
+
+.about-description:hover {
+    color: #ffffff;
+}
+
 .subtitle {
     font-size: 16px; /* Subtle and readable */
     color: #ffffff; /* White text for dark mode */
@@ -27,101 +43,239 @@
     font-size: 14px;
 }
 
-.div-box {
-    margin: 25px;
-    text-align: center;
+.row.div-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers both image & text horizontally */
+    gap: 2rem;
+    flex-wrap: wrap; /* keeps layout responsive */
+    max-width: 1200px; /* optional: limits how wide the content can spread */
+    margin: 0 auto; /* centers the whole row */
 }
 
-
 .img-box {
-    /* border: 2px solid rgba(255, 255, 255, 0.1); Semi-transparent white border */
-    border-radius: 12px; /* Rounded corners */
-    overflow: hidden; /* Ensures the image respects the border radius */
-    /* backdrop-filter: blur(10px); Adds blur for frosted glass */
-    /* background: rgba(255, 255, 255, 0.05); Light frosted glass effect */
+    flex: 1 1 50%; /* acts like col-6 */
+    display: flex;
+    justify-content: center; /* keeps the image centered in its half */
 }
 
 .img-box img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px; /* prevents it from getting too big */
     height: auto;
     display: block;
-    border-radius: 8px;
+    object-fit: cover;
+    border-radius: 12px;
 }
+
+
 
 .text-box {
-    border-radius: 12px; /* Rounded corners */
-    padding: 5px;
-    /* background: rgba(255, 255, 255, 0.05); /* Light frosted glass effect */
-    /* backdrop-filter: blur(10px); Adds blur for frosted glass */ 
-    text-align: center;
-    justify-content: center;
-    display: block;
-    align-items: center;
-    margin-top: 5%;
+    flex: 3; /* Allows the text box to take remaining space */
+    padding: 15px;
 }
 
-.text-box-2 {
-    border-radius: 12px; /* Rounded corners */
-    padding: 40px;
-    /* background: rgba(255, 255, 255, 0.05); /* Light frosted glass effect */
-    /* backdrop-filter: blur(10px); Adds blur for frosted glass */ 
-    text-align: center;
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .row.div-box {
+        flex-direction: column; /* stack vertically */
+    }
+
+    /* IMAGE FIRST (top) */
+    .img-box {
+        order: 1;
+    }
+
+    /* TEXT SECOND (below) */
+    .text-box {
+        order: 2;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* IMAGE BELOW TEXT for very small screens */
+    .img-box {
+        order: 2;
+    }
+    .text-box {
+        order: 1;
+    }
+}
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 140px;
+    padding-top:80px;
+}
+
+.skills-island {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px 24px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-island:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.island-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 6px;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
-    margin-bottom: 40px;
+    gap: 10px;
     justify-content: center;
-    text-align: center;
 }
 
 .skill-tag {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 6px 10px;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: 500;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    position: relative;
-    margin-bottom: 20px;
-    color: #ffffff; /* White text for better contrast */
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; /* 👈 Move this here */
 }
+
 
 .skill-tag:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light white overlay on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
-    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
+
 .skill-logo {
-    width: 25px;
-    height: 25px;
-    margin-right: 3px;
+    width: 26px;
+    height: 26px;
+    margin-right: 4px;
 }
 
 .skill-name {
-    display: none; /* Hide text by default */
-    position: absolute;
-    top: 100%; /* Position below the logo */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    white-space: nowrap;
+    display: none;
 }
 
 .skill-tag:hover .skill-name {
-    display: block; /* Show text on hover */
+    display: inline-block;
+}
+
+.skill-name-black {
+    display: none;
+    color : #000000;
+}
+
+.skill-tag:hover .skill-name-black {
+    display: inline-block;
+}
+
+.orbit-wrapper {
+    position: relative;
+    width: min(90vw, 650px);
+    height: min(90vw, 650px);
+    margin: 80px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.orbit-center {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.orbit-center h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    padding: clamp(25px, 6vw, 50px) clamp(30px, 7vw, 60px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.orbit-item {
+    position: absolute;
+    color: #fff;
+    padding: clamp(6px, 2vw, 10px) clamp(12px, 3vw, 20px);
+    border-radius: 40px;
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: floaty 6s ease-in-out infinite;
+}
+
+.orbit-item:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255,255,255,0.3);
+    z-index: 3;
+}
+
+/* floating animation */
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* progressively scale orbit layout */
+@media (max-width: 1024px) {
+    .orbit-wrapper {
+        width: min(90vw, 500px);
+        height: min(90vw, 500px);
+    }
+}
+
+@media (max-width: 768px) {
+    .orbit-wrapper {
+        width: min(90vw, 400px);
+        height: min(90vw, 400px);
+    }
+    .orbit-item {
+        font-size: clamp(0.65rem, 2vw, 0.8rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .orbit-wrapper {
+        width: 100%;
+        height: 350px;
+    }
+    .orbit-center h3 {
+        font-size: 1rem;
+        padding: 20px 25px;
+    }
+    .orbit-item {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
 }
 

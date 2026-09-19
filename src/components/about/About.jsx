@@ -1,107 +1,151 @@
 import React from 'react';
 import './about.css';
-// import ME from '../../assets/me.jpg';
+import { useLanguage } from '../../context/LanguageContext';
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <section id='about'>
       <div className='about__container'>
         <main className='row'>
           <section className="col">
             <div className='title'>
-              <h2>EDUCATION</h2>
+              <h2>{t('about.education')}</h2>
             </div>
             <div className='contents'>
-            <div className='box'>
-              <h3>Master in Information Systems - Knowledge Engineering Specialization</h3>
-              <h4>Graduation in June 2026</h4>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-              </ul>
 
-              <div className="tag-container">
-                <span className="tag">Information Retrieval</span>
-                <span className="tag">Deep Learning</span>
-                <span className="tag">Knowledge Organization System</span>
-                <span className="tag">Natural Language Processing</span>
-
+              {/* Databricks Cert */}
+              <div className='box' data-aos="fade-up" style={{ borderColor: '#38bdf8', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/databricks.svg" alt="Databricks" style={{ width: '40px', filter: 'invert(58%) sepia(85%) saturate(3015%) hue-rotate(170deg) brightness(99%) contrast(98%)' }} />
+                  <h3 style={{ color: '#38bdf8', marginBottom: 0 }}>{t('about.cert_db')}</h3>
               </div>
-            </div>
 
-              <div className='box'>
-                <h3>Bachelor in Information Systems</h3>
+              {/* Master */}
+              <div className='box' data-aos="fade-up">
+                <h3>{t('about.msc_title')}</h3>
+                <h4>{t('about.msc_school')}</h4>
                 <ul>
-                  <li>🏫 Studied Enterprise Information Systems, algorithms, and databases, gaining a comprehensive understanding of these core areas.</li>
-                  <li>📊 Acquired knowledge in calculus, algebra, statistics, and probability, laying a strong mathematical foundation for data analysis.</li>
-                  <li>🤖 Explored machine learning, applying concepts to practical scenarios and enhancing my analytical skills.</li>
-                  <li>📜 Conducted a research thesis on the classification and automated correction of coding assignments, integrating all learned subjects into a meaningful project.</li>
+                    <li>{t('about.msc_desc')}</li>
                 </ul>
                 <div className="tag-container">
-                <span className="tag">Oriented Object Programming</span>
-                  <span className="tag">Algorithms</span>
-                  <span className="tag">Database Design</span>
-                  <span className="tag">Artifical Intelligence</span>
-                  <span className="tag">Machine Learning</span>
-                  <span className="tag">Linear Algebra</span>
-                  <span className="tag">Security of Information Systems</span>
-                  <span className="tag">Entreprise Information Systems</span>
-                  
-
+                    <span className="tag">Data Science</span>
+                    <span className="tag">Machine Learning</span>
+                    <span className="tag">Information Retrieval</span>
+                    <span className="tag">Semantic Web technologies</span>
+                    <span className="tag">Knowledge Organization System</span>
                 </div>
               </div>
-              <div className='box'>
-                <h3>Baccalaureate Diploma with Honors in Science, with Mathematics Specialization</h3>
-                <p>Lycée Jeanne d'Arc</p>
+
+              {/* AWS Cert */}
+              <div className='box' data-aos="fade-up" style={{ borderColor: '#FF9900', display: 'flex', alignItems: 'center', gap: '1rem', cursor: 'pointer' }} onClick={() => window.open('https://www.credly.com/badges/84b2d43c-82e4-4982-acd4-5fcbf4263c9c/public_url', '_blank')}>
+                  <img src="https://images.credly.com/size/340x340/images/778bde6c-ad1c-4312-ac33-2fa40d50a147/image.png" alt="AWS Certified Machine Learning – Specialty" style={{ width: '60px' }} />
+                  <h3 style={{ color: '#FF9900', marginBottom: 0 }}>{t('about.cert_aws')}</h3>
               </div>
+
+              {/* Bachelor */}
+              <div className='box' data-aos="fade-up">
+                  <h3>{t('about.bsc_title')}</h3>
+                  <h4>{t('about.bsc_school')}</h4>
+                  <ul>
+                      <li>{t('about.bsc_desc1')}</li>
+                      <li>{t('about.bsc_desc2')}</li>
+                  </ul>
+                  <div className="tag-container">
+                      <span className="tag">Object-Oriented Programming</span>
+                      <span className="tag">Algorithms</span>
+                      <span className="tag">Database Design</span>
+                      <span className="tag">Artificial Intelligence</span>
+                      <span className="tag">Data Mining</span>
+                      <span className="tag">Linear Algebra</span>
+                      <span className="tag">Information Systems Security</span>
+                      <span className="tag">Enterprise Information Systems</span>
+                </div>
+              </div>
+
+              {/* Baccalaureate */}
+              <div className='box' data-aos="fade-up">
+                <h3>{t('about.bac_title')}</h3>
+                <p>{t('about.bac_school')}</p>
+              </div>
+
             </div>
           </section>
 
           <section className="col">
             <div className='title'>
-              <h2>EXPERIENCE</h2>
+              <h2>{t('about.experience')}</h2>
             </div>
+
+
             <div className='contents'>
-              <div className='box'>
-                <h3>Python Software Developer - Internship</h3>
-                <h4>Division des batîments de l'Université de Genève</h4>
-                <h4>Jan-Feb 2025</h4>
 
-                <ul>
-                  <li>💻 Developed a web application for visualizing building energy consumption using Python and Flask.</li>
-                  <li>🎨 Designed and implemented an intuitive user interface and structured the database for efficient data handling.</li>
-                  <li>🗣️ Communicated complex technical concepts to stakeholders, ensuring clear understanding of the system's functionalities and benefits.</li>
-                  <li>🚀 Enhanced skills in web development, data management, and effective communication through practical application.</li>
-                </ul>
-                <div className="tag-container_2">
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" title="Python" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flask.svg" alt="Flask" title="Flask" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg" alt="SQL" title="SQL" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="Docker" title="Docker" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nginx.svg" alt="Nginx" title="Nginx" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" alt="Javascript" title="Javascript" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" alt="HTML" title="HTML" className="skill-tag_2" />
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" alt="CSS" title="CSS" className="skill-tag_2" />
+                <div className='box'>
+                    <h3>{t('about.ta_title')}</h3>
+
+                    <h4>{t('about.ta_school')}</h4>
+                    <h4>{t('about.ta_date')}</h4>
+                    <ul>
+                        <li>{t('about.ta_desc1')}</li>
+                        <li>{t('about.ta_desc2')}</li>
+                        <li>{t('about.ta_desc3')}</li>
+                    </ul>
+
+                        <div className="tag-container_2">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/scala.svg" alt="Scala" title="Scala" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" title="Python" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="Docker" title="Docker" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg" alt="Git" title="Git" className="skill-tag_2"/>
+                            </div>
+                    </div>
+
+                    <div className='box'>
+                        <h3>{t('about.intern_title')}</h3>
+                        <h4>{t('about.intern_school')}</h4>
+                        <h4>{t('about.intern_date')}</h4>
+
+                        <ul>
+                            <li>{t('about.intern_desc1')}</li>
+                            <li>{t('about.intern_desc2')}</li>
+                            <li>{t('about.intern_desc3')}</li>
+                            <li>{t('about.intern_desc4')}</li>
+                        </ul>
+
+                        <div className="tag-container_2">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python"
+                                 title="Python" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flask.svg" alt="Flask"
+                                 title="Flask" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mariadb.svg" alt="MariaDB"
+                                 title="SQL" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="Docker"
+                                 title="Docker" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linux.svg" alt="Linux"
+                                 title="Linux" className="skill-tag_2"/>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg"
+                                 alt="Javascript" title="Javascript" className="skill-tag_2"/>
+                        </div>
+
+
+                    </div>
+
+
+                    <div className='box'>
+                        <h4>{t('about.vol_date')}</h4>
+                        <h3>{t('about.vol_title')}</h3>
+                        <ul>
+                            <li>{t('about.vol_desc1')}</li>
+                            <li>{t('about.vol_desc2')}</li>
+                        </ul>
+                    </div>
+
+
                 </div>
-
-
-              </div>
-              <div className='box'>
-                <h4>2016</h4>
-                <h3>Volunteering - Cours Informatique au senior</h3>
-                <ul>
-                  <li>Engaged in social work by teaching seniors about computers and various software applications.</li>
-                  <li>Conducted volunteer sessions to enhance their digital literacy, focusing on practical and accessible technology skills.</li>
-                  <li>Provided personalized guidance to help seniors navigate the digital world confidently and independently.</li>
-                </ul>
-              </div>
-            </div>
           </section>
         </main>
       </div>
     </section>
-  );
+);
 };
 
 export default About;

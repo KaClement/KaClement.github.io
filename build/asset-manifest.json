@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio_ck/static/css/main.599a9879.css",
-    "main.js": "/portfolio_ck/static/js/main.d2732edc.js",
-    "static/media/movie_wall.jpg": "/portfolio_ck/static/media/movie_wall.1a89ec3dfca081fa02b9.jpg",
-    "static/media/swiss.jpg": "/portfolio_ck/static/media/swiss.d56768b7f0bca5f9cd97.jpg",
-    "static/media/emoji_2.png": "/portfolio_ck/static/media/emoji_2.d4a9c6f75239b500fe4d.png",
-    "static/media/energy.png": "/portfolio_ck/static/media/energy.56e6dcf3738073b4f213.png",
-    "static/media/git-logo.png": "/portfolio_ck/static/media/git-logo.8dd3688bb1415872d423.png",
-    "static/media/portfolio3.jpg": "/portfolio_ck/static/media/portfolio3.cbab42559fe73e73906f.jpg",
-    "static/media/cv.pdf": "/portfolio_ck/static/media/cv.44f1dd59686590b5d2ad.pdf",
-    "static/media/bg_main_dark.jpg": "/portfolio_ck/static/media/bg_main_dark.e29b911841329c5eb171.jpg",
-    "static/media/mysql-logo.png": "/portfolio_ck/static/media/mysql-logo.f926799293f6ee1f0b0d.png",
-    "static/media/scikit-learn-logo.jpg": "/portfolio_ck/static/media/scikit-learn-logo.36c1ca37dcefb576bcef.jpg",
-    "static/media/js-logo.png": "/portfolio_ck/static/media/js-logo.266bd9fb2663dcc057b4.png",
-    "index.html": "/portfolio_ck/index.html",
-    "static/media/file-regular.svg": "/portfolio_ck/static/media/file-regular.3118692a7483dff56347b1aa864c573d.svg",
-    "main.599a9879.css.map": "/portfolio_ck/static/css/main.599a9879.css.map",
-    "main.d2732edc.js.map": "/portfolio_ck/static/js/main.d2732edc.js.map"
+    "main.css": "/static/css/main.099591db.css",
+    "main.js": "/static/js/main.f486753a.js",
+    "static/media/profile_pic_link.PNG": "/static/media/profile_pic_link.cc58eb5b15a007b60298.PNG",
+    "static/media/Mémoire_de_Bachelor_KACEL_Clément_SISS.pdf": "/static/media/Mémoire_de_Bachelor_KACEL_Clément_SISS.a49faa879a341dcfbd99.pdf",
+    "static/media/movie_wall.jpg": "/static/media/movie_wall.1a89ec3dfca081fa02b9.jpg",
+    "static/media/swiss.jpg": "/static/media/swiss.d56768b7f0bca5f9cd97.jpg",
+    "static/media/hackathons_piuc.jpeg": "/static/media/hackathons_piuc.a68dd66223c237e61462.jpeg",
+    "static/media/cv.pdf": "/static/media/cv.3762e045f79660847a5c.pdf",
+    "static/media/swiss_ai_hachaktohns.jpg": "/static/media/swiss_ai_hachaktohns.fc9e468f3eb66aed9220.jpg",
+    "static/media/energy.png": "/static/media/energy.56e6dcf3738073b4f213.png",
+    "static/media/analyze_page.png": "/static/media/analyze_page.0440c537cabbe7e0d7a0.png",
+    "static/media/game_calc.png": "/static/media/game_calc.a14329eeb887b0078639.png",
+    "static/media/math_ml.jpg": "/static/media/math_ml.5a9dec8d0f3ac80aeb7a.jpg",
+    "static/media/sorting_viz.png": "/static/media/sorting_viz.8ef7a6c8fc677f1f8610.png",
+    "static/media/proC.jpg": "/static/media/proC.70e218c9420d2339e0c2.jpg",
+    "static/media/profile_pic.jpg": "/static/media/profile_pic.f1c2e5cf36fa95d40666.jpg",
+    "static/media/bg_main_dark.jpg": "/static/media/bg_main_dark.e29b911841329c5eb171.jpg",
+    "static/media/ml_design.jpg": "/static/media/ml_design.382712695af18945ffec.jpg",
+    "static/media/design_patterns.jpg": "/static/media/design_patterns.88666d1897e44c39090b.jpg",
+    "static/media/advanced_python.jpg": "/static/media/advanced_python.47d39104540769c23ce4.jpg",
+    "index.html": "/index.html",
+    "static/media/file-regular.svg": "/static/media/file-regular.3118692a7483dff56347b1aa864c573d.svg",
+    "main.099591db.css.map": "/static/css/main.099591db.css.map",
+    "main.f486753a.js.map": "/static/js/main.f486753a.js.map"
   },
   "entrypoints": [
-    "static/css/main.599a9879.css",
-    "static/js/main.d2732edc.js"
+    "static/css/main.099591db.css",
+    "static/js/main.f486753a.js"
   ]
 }

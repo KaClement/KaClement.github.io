@@ -12,12 +12,12 @@
     text-decoration: none;
 }
 :root{
-    --color-bg:#222831;
-    --color-bg-variant:#393E46;
+    --color-bg:#0f172a; /* Slate 900 */
+    --color-bg-variant:#1e293b; /* Slate 800 */
     --color-primary:#F2DEBA;
     --color-primary-variant:#F2DEBA;
-    --color-white:#fff;
-    --color-light:rgba(255,255,255,0.6);
+    --color-white:#f8fafc;
+    --color-light:#94a3b8; /* Slate 400 */
 
     --container-width-lg:75%;
     --container-width-md:86%;
@@ -29,19 +29,16 @@ html{
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
 body{
-    font-family: 'Segoe UI', sans-serif; /* Windows 11 font */
-    /* background-color: var(--color-bg); */
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--color-bg);
     color : var(--color-white);
     line-height: 1.7;
-    /*background-image: url(../src/assets/pexels-guilherme-rossi-1822717.jpg);
-    background-size: contain;
-    background-repeat:no-repeat;*/
-    overflow: scroll;
-    resize: both;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /*=========== GENERAL STYLES ===============*/
@@ -93,18 +90,41 @@ a:hover{
     cursor:pointer;
     border:1px solid var(--color-primary);
     transition : var(--transition);
-    
 }
 
 .btn:hover{
-    background: var(--color-white);
+    background: var(--color-primary);
     color:var(--color-bg);
     border-color: transparent;
+    box-shadow: 0 0 15px rgba(242, 222, 186, 0.4);
 }
 
 .btn-primary{
     background: var(--color-primary);
     color:var(--color-bg);
+}
+
+.lang-toggle-btn {
+    background: var(--color-bg-variant);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lang-toggle-btn:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    box-shadow: 0 0 15px rgba(242, 222, 186, 0.5);
+    transform: translateY(-2px);
 }
 img{
     display: block;

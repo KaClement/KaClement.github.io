@@ -2,8 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import { LanguageProvider } from './context/LanguageContext';
 
-ReactDOM.render(<App/>, document.querySelector("#root"))
+ReactDOM.render(
+  <LanguageProvider>
+    <App/>
+  </LanguageProvider>, 
+  document.querySelector("#root")
+)
 
 
 

@@ -1,0 +1,104 @@
+/* Section Styling */
+.booklist-section {
+    background: linear-gradient(to bottom, #B0BEC5, #CFD8DC, #ECEFF1);
+    padding: 50px 0px;
+    margin: 0 0 0 0; /* REMOVE bottom margin */
+    text-align: center;
+}
+
+
+
+/* Title */
+.booklist-title {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.book-carousel-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.books-slider .slick-slide {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Make the center item slightly larger if desired */
+.books-slider .slick-center .book-card {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.book-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin: 10px auto;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom slick arrows styling */
+.slick-prev:before, .slick-next:before {
+    color: #444; /* Darker arrow color */
+}
+
+/* Book Cover */
+.book-image {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Book Info */
+.book-header {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin: 12px 16px 4px;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 16px 10px;
+    font-style: italic;
+}
+
+.book-description {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 0 16px 16px;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .booklist-section {
+        padding: 30px 15px;
+    }
+
+    .booklist-title {
+        font-size: 2rem;
+    }
+
+    .book-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
