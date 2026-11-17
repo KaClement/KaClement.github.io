@@ -11,7 +11,7 @@
     "title": "About Me",
     "bio1": "Data Engineer focused on data systems design, database modeling, and scalable architectures. Proficient in Python, SQL, and AWS for building ingestion pipelines, structuring databases, and orchestrating deployments with Docker, Kubernetes, and Helm.",
     "bio2": "Academic foundation in Information Systems (MSc, UNIGE), with competence in Artificial Intelligence (Multi-Agent Systems, RAG, Machine Learning) and Knowledge Engineering (Ontologies, Knowledge Graphs).",
-    "bio3": "I am a French-Canadian citizen and a native French speaker, fluent in professional English, with elementary Mandarin. Outside of tech, I'm passionate about cinema and playing competitive poker.",
+    "bio3": "I am a French-Canadian citizen and a native French speaker, fluent in professional English, with elementary Mandarin.",
     "core_data": "Core & Data Science",
     "databases": "Databases",
     "backend": "Backend & APIs",
