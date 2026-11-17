@@ -3,7 +3,7 @@
     "about": "About me",
     "experience": "Experience",
     "projects": "Projects",
-    "title": "Data Engineer",
+    "title": "AI Engineer",
     "subtitle": "Hold MSc in Information Systems and looking for Data Engineering opportunities in Switzerland.",
     "resume": "Resume"
   },
@@ -37,7 +37,7 @@
     "ta_desc1": "Mentored first-year Bachelor's students in an Introduction to Programming course; facilitated practical sessions, debugged Scala code, and simplified Object-Oriented Programming, data structures, and File I/O concepts.",
     "ta_desc2": "Contributed to enhancements for the course's JupyterHub environment as part of a team, managing version control with Git and containerizing dependencies using Docker to ensure reproducible student workspaces.",
     "ta_desc3": "Engineered an automated testing and personalized feedback pipeline using Python and nbgrader to dynamically evaluate assignments based on unit tests, integrating Large Language Models (LLMs) to generate contextual hints and explanations.",
-    "intern_title": "Data Engineering Intern",
+    "intern_title": "Software Engineer",
     "intern_school": "Division of Buildings Management DIBAT, University of Geneva",
     "intern_date": "January to February 2025",
     "intern_desc1": "Conceptual, logical, and physical modeling (in 3NF) and creation of a relational database in MariaDB to centralize building energy records.",

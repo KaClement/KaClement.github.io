@@ -3,7 +3,7 @@
     "about": "À propos",
     "experience": "Expérience",
     "projects": "Projets",
-    "title": "Data Engineer",
+    "title": "AI Engineer",
     "subtitle": "Titulaire d'un MSc en Systèmes d'Information et à la recherche d'opportunités en Ingénierie des Données en Suisse.",
     "resume": "CV"
   },
@@ -37,7 +37,7 @@
     "ta_desc1": "Mentorat des étudiants de première année de Bachelor dans un cours d'Introduction à la Programmation ; animation de sessions pratiques, débogage de code Scala, et vulgarisation de la Programmation Orientée Objet, des structures de données et des concepts d'E/S de fichiers.",
     "ta_desc2": "Contribution aux améliorations de l'environnement JupyterHub du cours au sein d'une équipe, gestion du contrôle de version avec Git et conteneurisation des dépendances à l'aide de Docker pour assurer des espaces de travail reproductibles pour les étudiants.",
     "ta_desc3": "Conception d'un pipeline de tests automatisés et de feedback personnalisé en utilisant Python et nbgrader pour évaluer dynamiquement les devoirs via des tests unitaires, en intégrant des Grands Modèles de Langage (LLMs) pour générer des indices et explications contextuels.",
-    "intern_title": "Stagiaire Ingénieur Data",
+    "intern_title": "Ingénieur Logiciel",
     "intern_school": "Division des Bâtiments (DIBAT), Université de Genève",
     "intern_date": "Janvier à Février 2025",
     "intern_desc1": "Modélisation conceptuelle, logique et physique (en 3NF) et création d'une base de données relationnelle MariaDB pour centraliser les registres énergétiques des bâtiments.",
